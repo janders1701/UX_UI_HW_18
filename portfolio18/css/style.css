@@ -1,10 +1,24 @@
+* {
+  margin: 0;
+  padding: 5px;
+}
+
 .list {
   list-style-type: none;
   display: flex;
   align-items: center;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+}
+
+.top-nav {
   padding: 10px;
+}
+
+.top-nav:hover {
+  text-decoration: underline 2px;
+  text-decoration-color: #dab442;
+  cursor: pointer;
 }
 
 .navigation {
@@ -13,23 +27,6 @@
   justify-content: space-between;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  padding: 10px;
-}
-
-li a {
-  color: black;
-  text-decoration: none;
-}
-
-li a:hover {
-  text-decoration: underline 3px;
-  text-decoration-color: #dab442
-}
 
 
 .get-in-touch1 {
@@ -45,7 +42,8 @@ li a:hover {
 }
 
 .get-in-touch1:hover {
-  background-color: black;
+  background-color: #535353;
+  cursor: pointer;
 }
 
 
@@ -55,39 +53,29 @@ li a:hover {
 #avatar {
   display: block;
   float: right;
-  position: relative;
-  top: -150px;
-  left: -55px;
-  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   z-index: 0;
 }
-
-
 
 .name {
   font-family: "Megrim", sans-serif;
   font-size: 92px;
-  margin: 100px;
-  position: relative;
-  top: 100px;
+  margin-left: 100px;
 }
 
 .description {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
-  margin: 100px;
+  margin-left: 100px;
   text-align: center;
-  position: relative;
-  top: 80px;
 }
-
-
 
 #bee {
   display: block;
   margin: auto;
+  padding-bottom: 50px;
   position: relative;
-  top: 50px;
   
   animation-name: bounce;
   animation-duration: 1s;
@@ -104,31 +92,132 @@ li a:hover {
     100% {top:20px;}
 }
 
-
-
 .download {
   width: 300px;
   height: 35px;
   display: block;
   margin: auto;
-  position: relative;
-  top: 50px;
   background-color: #dab442;
   border-radius: 100px;
   border: none;
-
   color: white;
   font-size: 16px;
 }
 
 .download:hover {
-  transform: scale(1.1);
-  background-color: black;
+  background-color: #535353;
+  cursor: pointer;
 }
 
-.download a {
-  text-decoration: none;
-  color: white;
+
+
+
+.my-ux-skills {
+  background-color: #F6EBC9;
+  margin-top: 200px;
+}
+
+.h2 {
+  font-family: "Megrim", sans-serif;
+  font-size: 92px;
+  margin-left: 100px;
+}
+
+
+.skills-box {
+  display: flex;
+  width: 100%;
+}
+
+.skill {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+
+.skill-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.skill-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.h3 {
+  font-family: "Megrim", sans-serif;
+  font-size: 92px;
+  margin: 100px;
+}
+
+.project1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nws-img {
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+#nws-img:hover {
+  background-color: white;
+  opacity: 20%;
+  cursor: pointer;
+  transform: scale(1.05)
+}
+
+.description1 {
+  display: block;
+  padding: 100px;
+}
+
+
+.description2 {
+  display: block;
+  padding: 100px;
+}
+
+#pku-img {
+  float: right;
+margin-left: 50px;
+margin-right: 100px;
+margin-bottom: 50px;
+}
+
+#pku-img:hover {
+  background-color: white;
+  opacity: 20%;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+.project-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.project-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  text-align: center;
 }
 
 
@@ -146,15 +235,20 @@ footer {
 .list2 {
   list-style-type: none;
   display: flex;
-  justify-content: center;
   align-items: center;
-  float: left;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
-.bottom a {
+.bottom {
   color: white;
+  padding: 10px;
+}
+
+.bottom:hover {
+  text-decoration: underline 2px;
+  text-decoration-color: #dab442;
+  cursor: pointer;
 }
 
 .get-in-touch {
@@ -170,6 +264,6 @@ footer {
 }
 
 .get-in-touch:hover {
-  background-color: white;
-  color: black;
+  background-color: #535353;
+  cursor: pointer;
 }
