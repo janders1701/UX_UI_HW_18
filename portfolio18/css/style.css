@@ -50,12 +50,14 @@
 
 
 
+.hero {
+  display: flex;
+  order: 1;
+}
+
 #avatar {
-  display: block;
-  float: right;
-  padding-left: 100px;
-  padding-right: 100px;
-  z-index: 0;
+  order: 2;
+  resize: 50%;
 }
 
 .name {
@@ -114,7 +116,6 @@
 
 .my-ux-skills {
   background-color: #F6EBC9;
-  margin-top: 200px;
 }
 
 .h2 {
@@ -126,7 +127,6 @@
 
 .skills-box {
   display: flex;
-  width: 100%;
 }
 
 .skill {
@@ -195,9 +195,9 @@
 
 #pku-img {
   float: right;
-margin-left: 50px;
-margin-right: 100px;
-margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-bottom: 50px;
 }
 
 #pku-img:hover {
@@ -266,4 +266,96 @@ footer {
 .get-in-touch:hover {
   background-color: #535353;
   cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .name {
+    display: block;
+    font-size: 32px;
+    order: 1;
+  }
+  .description {
+    font-size: 14px;
+    display: block;
+  }
+  #beeFINAL {
+    display: block;
+  }
+
+  .download {
+    display: block;
+  }
+
+  .hero {
+    display: block;
+  }
+  #avatar {
+    display: block;
+    height: 500px;
+    width: 380px;
+    order: 2;
+  }
+
+
+
+  .h2 {
+    font-size: 32px;
+  }
+
+  .skill-title {
+    font-size: 18px;
+  }
+
+  .skill-desc {
+    font-size: 14px;
+  }
+
+
+  .h3 {
+    font-size: 32px;
+  }
+
+  .project1 {
+    display: block;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-text {
+    font-size: 14px;
+  }
+
+  .project2 {
+    display: block;
+  }
+
+  #pku-img {
+    display: grid;
+    grid-template-columns: auto;
+    width: 300px;
+    height: 200px;
+  }
+
+  #nws-img {
+    display: block;
+    width: 300px;
+    height: 200px;
+  }
+
+  .projects {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
 }
