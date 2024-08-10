@@ -67,7 +67,6 @@ html, body{
 .hero-words {
   display: flex;
   flex-direction: column;
-  flex
 }
 
 .name {
@@ -363,6 +362,7 @@ footer {
 
   .skill-title {
     font-size: 16px; 
+    padding-top: 30px;
   }
 
   .skill-desc {
@@ -375,6 +375,7 @@ footer {
     padding-bottom: 10px;
     text-align: center;
   }
+
 
 
 
