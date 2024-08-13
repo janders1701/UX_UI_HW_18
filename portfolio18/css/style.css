@@ -38,8 +38,6 @@ html, body{
   padding: 20px;
 }
 
-
-
 .get-in-touch1 {
   color: white;
   font-size: 16px;
@@ -57,6 +55,12 @@ html, body{
   cursor: pointer;
 }
 
+
+
+
+
+
+/*Hero section*/
 
 .hero {
   display: flex;
@@ -83,9 +87,6 @@ html, body{
   padding-right: 100px;
   text-align: center;
 }
-
-
-
 
 .animation {
   display: flex;
@@ -131,6 +132,10 @@ html, body{
 
 
 
+
+
+/*UX Skills section*/
+
 .my-ux-skills {
   background-color: #F6EBC9;
   padding: 20px;
@@ -173,9 +178,7 @@ html, body{
 
 
 
-
-
-
+/*Project section*/
 
 
 .h3 {
@@ -185,6 +188,83 @@ html, body{
   margin-bottom: 60px;
   text-align: center;
 }
+
+.grid {
+  display: grid;
+  grid-gap: 50px;
+}
+
+.project1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 50px;
+  grid-template-areas: "img text";
+}
+
+.project1 img {
+  grid-area: img;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-details1 {
+  grid-area: text;
+  padding: 30px;
+}
+
+
+.project2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 50px;
+  grid-template-areas: "text img";
+}
+
+.project2 img {
+  grid-area: img;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-details2 {
+  grid-area: text;
+  padding-left: 0px;
+  padding: 30px;
+}
+
+.project-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.project-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+#pku-img:hover {
+  background-color: white;
+  opacity: 20%;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#nws-img:hover {
+  background-color: white;
+  opacity: 20%;
+  cursor: pointer;
+  transform: scale(1.05)
+}
+
+
+
+/*OLD FLEX BOX "PROJECT" SECTION
+
 
 .project1 {
   display: flex;
@@ -208,7 +288,6 @@ html, body{
   padding: 100px;
 }
 
-
 .description2 {
   display: block;
   padding: 100px;
@@ -228,22 +307,15 @@ html, body{
   transform: scale(1.05);
 }
 
-
-.project-title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 40px;
-  text-align: center;
-}
-
-.project-text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  text-align: center;
-}
+*/
 
 
 
 
+
+
+
+/*Footer*/
 
 footer {
   background-color: #535353;
@@ -292,6 +364,11 @@ footer {
 
 
 
+
+
+
+
+/*Media Query*/
 
 @media only screen and (max-width: 600px) {
   #avatar {
@@ -351,8 +428,7 @@ footer {
   }
 
 
-
-
+/*Skills*/
   
   .h2 {
     font-size: 32px;
@@ -377,10 +453,7 @@ footer {
   }
 
 
-
-
-
-
+/*Projects*/
 
   .h3 {
     font-size: 32px;
@@ -392,6 +465,8 @@ footer {
 
   .project1 {
     display: block;
+    padding-bottom: 30px;
+    padding-top: 0;
   }
 
   .project-title {
@@ -399,6 +474,7 @@ footer {
     font-size: 16px;
     text-align: center;
     margin: auto;
+    padding: 0px;
   }
 
   .project-text {
@@ -412,6 +488,8 @@ footer {
     display: block;
     text-align: center;
     margin: auto;
+    padding-bottom: 30px;
+    padding-top: 0;
   }
 
   #pku-img {
@@ -434,4 +512,10 @@ footer {
   .description1, .description2 {
     padding: 30px;
   }
+}
+
+.grid {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
